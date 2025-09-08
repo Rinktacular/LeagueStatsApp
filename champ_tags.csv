@@ -1,0 +1,17 @@
+﻿champ_name,dmg,has_engage,is_tank
+Ahri,AP,true,false
+Zed,AD,false,false
+Jinx,AD,false,false
+Lux,AP,true,false
+JarvanIV,AD,true,true
+Sejuani,AP,true,true
+Maokai,AP,true,true
+Syndra,AP,false,false
+Yasuo,AD,true,false
+Camille,AD,true,false
+Renekton,AD,true,false
+Ambessa,AD,true,true
+Rumble,AP,false,false
+Ezreal,AD,false,false
+Lulu,AP,false,false
+Nautilus,AP,true,true

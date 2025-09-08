@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Seed queue",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_seed.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Worker (drain 200)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/run_worker.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

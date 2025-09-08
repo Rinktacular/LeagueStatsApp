@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Install deps",
+            "type": "shell",
+            "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe -m pip install -e ."
+        },
+        {
+            "label": "Run: seed",
+            "type": "shell",
+            "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe ${workspaceFolder}\\run_seed.py",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run: worker",
+            "type": "shell",
+            "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe ${workspaceFolder}\\run_worker.py",
+            "problemMatcher": []
+        }
+    ]
+}
