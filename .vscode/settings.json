@@ -15,6 +15,7 @@
         "pycache",
         "sname",
         "summ",
-        "venv"
+        "venv",
+        "winrate"
     ]
 }
