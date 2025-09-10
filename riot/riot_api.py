@@ -28,10 +28,10 @@ class RiotClient:
                 finally:
                     r.raise_for_status()
             if r.status_code in (429, 503, 504):
-                ra = r.headers.get("Retry-After")
-                delay = float(ra) if ra and ra.isdigit() else backoff
-                print(f"[riot] {r.status_code} sleeping {delay}s url={url}", flush=True)
-                time.sleep(delay); backoff = min(backoff * 2, 16.0); continue
+                ra = float(r.headers.get("Retry-After", "1"))
+                time.sleep(ra + 0.1)
+                print(f"[riot] {r.status_code} sleeping {ra}s url={url}", flush=True)
+                time.sleep(ra); backoff = min(backoff * 2, 16.0); continue
             r.raise_for_status()
             return r.json()
 
